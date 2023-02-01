@@ -1,0 +1,21 @@
+<main class="container">
+
+  <section class="chat">
+    <input type="text" [(ngModel)] = "name">
+    <button class="next" id="next" (click)="teximate.enterPlayer.play();showNext()">Next</button>
+
+    <!--  animation letter by letter done with teximate package. works with only default value yet -->
+    <teximate #teximate [text]="'Hello, ' + name + '. I am Tom Marvolo Riddle'" [hidden]="isShowDiv" [enter]="enterAnimation"></teximate> 
+    <p class="phrase2" [hidden]="isShowDiv" (click)="showNext()">Do you know what my name means?</p>
+
+</section>
+
+  <section>
+    
+    <input type="text" [(ngModel)] = "meaning">
+    <button class="next" id="answer" (click)="meaningCheck(meaning);showNextAnswer()">Ready</button>
+    <p id="phrase3"[hidden]="isShowAnswer"></p>
+  </section>
+</main>
+
+

@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+
+body {
+    font-size: 62.5%;
+
+}
+
+.container {
+    display: block;
+    text-align: center;
+    margin: 3rem;
+    font-size: 2rem;
+    font-family: 'Caveat', cursive;
+}
+
+input {
+    padding: 1rem;
+    width: 15%;
+    font-size: 1.2rem;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: grey;
+    font-family: fantasy;
+}
+.next {
+    font-family: fantasy;
+    width: 7%;
+    padding: 1rem;
+    font-size: 1.4rem;
+    border: 1px lightgray solid;
+    border-radius: 10px;
+}
+
+@keyframes phrase2{
+    from {opacity: 0%; }
+    to { opacity: 100%; }
+}
+.phrase2 {
+    opacity: 0%;
+    animation-name: phrase2;
+    animation-duration: 20s;
+    animation-delay: 1s;
+}
+
+#phrase3 {
+    color: #2C982D;
+    opacity: 0%;
+    animation-name: phrase2;
+    animation-duration: 6s;
+}
